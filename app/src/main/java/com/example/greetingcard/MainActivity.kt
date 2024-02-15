@@ -27,17 +27,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-            text = "Hello $name!",
-            modifier = modifier
-    )
+fun Greeting(name: String) {
+    Text(text = "Hi, my name is $name!")
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     GreetingCardTheme {
-        Greeting("Android")
+        Greeting("Juan")
     }
 }
